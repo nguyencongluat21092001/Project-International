@@ -1,0 +1,570 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$gray-color: #CCC;
+$primary-color: green;
+$red-color: red;
+
+
+body {
+    font-size: 20px;
+}
+.header {
+    display: none;
+}
+ul {
+    list-style: none;
+}
+
+.confirm-question {
+    padding-bottom: 20px;
+}
+
+.content {
+    padding: 50px 0;
+    .content-header {
+        text-align: center;
+    }
+
+    .content-body {
+        // 0.html
+        .form {
+            max-width: 70%;
+            margin: 0 auto;
+            padding: 30px 0;
+            background-color: white;
+
+            .form-group {
+                display: flex;
+                align-items: center;
+                padding: 6px 0;
+
+                .form-item {
+                    display: flex;
+                    align-items: center;
+
+                    span {
+                        display: flex;
+                        align-items: center;
+                        margin-right: 20px;
+                    }
+
+                    input {
+                        margin-right: 6px;
+                    }
+
+                    input[type=text] {
+                        width: 60px;
+                        padding: 4px;
+                    }
+                    input[type=radio] {
+                        width: 20px;
+                        height: 20px;
+                        margin-top: 0;
+                        cursor: pointer;
+                    }
+                    input[type=checkbox] {
+                        width: 20px;
+                        height: 20px;
+                        margin-top: 0;
+                        cursor: pointer;
+                    }
+                }
+                .form-item-direction {
+                    flex-direction: column;
+
+                    .form-el {
+                        margin: 6px 0;
+                    }
+
+                    div {
+                        display: block;
+                        width: 100%;
+                    }
+
+                    .date {
+                        display: flex;
+                        align-items: center;
+
+                        .date-left {
+                            margin-left: 100px;
+                            
+                            input {
+                                margin: 0 10px;
+                            }
+                        }
+                    }
+                }
+                label {
+                    margin-bottom: 0;
+                    width: 20%;
+                }
+            }
+        }
+
+        // 0-1.html
+        .question-list {
+            .question-item {
+                position: relative;
+
+                .question-child {
+                    padding-left: 70px;
+
+                    li {
+                        margin-bottom: 20px;
+                    }
+
+                    .question-title {
+                        font-size: 22px;
+                        font-weight: bold;
+                    }
+
+                    .awnser-list {
+                        padding: 10px 0;
+
+                        input[type=radio] {
+                            width: 20px;
+                            height: 20px;
+                            margin-right: 10px;
+                        }
+
+                        .form-group {
+                            display: flex;
+                            font-size: 16px;
+
+                            input[type=radio] {
+                                margin-top: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        // 0-2.html
+        .question {
+            table {
+                text-align: center;
+
+                tr td:first-child {
+                    text-align: left;
+                    font-size: 16px;
+                }
+
+                .table-w {
+                    width: 120px;
+                }
+            }
+        }
+
+        // Confirm-acount
+        .show {
+            .info {
+                display: flex;
+
+                .info-left, .info-right {
+                    width: 50%;
+                    margin: 10px 20px;
+                }
+
+                .info-left {
+                    text-align: right;
+                    color: $gray-color;
+
+                    .text-after {
+                        position: relative;
+
+                        &::after {
+                            position: absolute;
+                            content: 'これは言葉です';
+                            right: 0;
+                            font-size: 12px;
+                            color: $gray-color;
+                        }
+                    }
+                }
+
+                .info-right {
+                    font-weight: 600;
+
+                    .detail {
+                        .number {
+                            position: relative;
+                            padding-top: 10px;
+
+                            &::before {
+                                position: absolute;
+                                content: '郵便番号';
+                                top: -4px;
+                                font-size: 12px;
+                                color: $gray-color;
+                            }
+                        }
+
+                        .name {
+                            display: flex;
+                            margin-bottom: 20px;
+
+                            .name-left, .name-right {
+                                margin-right: 30px;
+
+                                p {
+                                    margin-bottom: 2px;
+                                }
+
+                                p:first-child {
+                                    font-size: 12px;
+                                    color: $gray-color;
+                                }
+                            }
+                        }
+
+                        .address {
+                            .address-top {
+                                margin-bottom: 20px;
+
+                                p:first-child {
+                                    font-size: 12px;
+                                    color: $gray-color;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .rules {
+                text-align: center;
+                color: $gray-color;
+                margin-bottom: 40px;
+            }
+        }
+
+        // Mypage
+        .mypage {
+            padding: 20px 0;
+            .mypage-title {
+                margin: 10px;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+
+            .video {
+                margin-bottom: 30px;
+                p {
+                    text-align: center;
+                }
+
+                &-body {
+                    height: 200px;
+                    background-color: yellow;
+                    border: 1px solid $gray-color;
+                }
+
+                .video-invalid {
+                    background-color: $gray-color;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+
+            .mypage-note {
+                text-align: center;
+
+                p {
+                    font-size: 16px;
+                    max-width: 70%;
+                    margin: 0 auto;
+                    margin-bottom: 40px;
+                }
+            }
+
+            .schedule {
+                .schedule-item {
+                    text-align: center;
+                    margin-bottom: 20px;
+                    font-size: 16px;
+
+                    .schedule-btn {
+                        display: inline-block;
+                        padding: 6px 50px;
+                        background-color: $primary-color;
+                        margin-left: 20px;
+                        color: white;
+                    }
+
+                    .schedule-invalid {
+                        background-color: $gray-color;
+                        cursor: not-allowed;
+                    }
+                }
+            }
+        }
+
+        // Admin login
+        .form-login {
+            padding: 50px 0;
+            p {
+                margin-bottom: 0;
+            }
+
+            .form-group {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .form-left {
+                    width: 50%;
+                    text-align: right;
+                    padding-right: 40px;
+                    font-size: 28px;
+                }
+
+                .form-right {
+                    width: 50%;
+                    display: flex;
+                    align-items: center;
+
+                    input {
+                        padding: 4px 10px;
+                        margin-right: 6px;
+                    }
+                }
+            }
+
+            
+
+            .form-error {
+                color: $red-color;
+                font-size: 18px;
+                text-align: center;
+                display: none;
+            }
+        }
+    }
+}
+
+table td {
+    position: relative;
+    min-height: 100px;
+}
+
+
+input[type=radio] {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 0;
+}
+
+            
+.form-link {
+    text-align: center;
+
+    button {
+        width: 200px;
+        padding: 14px;
+        margin: 0 10px;
+        border: none;
+        background-color: #CCC;
+        color: white;
+    }
+
+    .form-link-primary {
+        background-color: #0d6efd;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .content {
+        .content-body {
+            .form {
+                max-width: 100%;
+            }
+        }
+    }
+
+    .container-full-w {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .content {
+        .content-body {
+            .form {
+                .form-group {
+                    display: block;
+
+                    label {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .question-w-40 {
+                width: 40%;
+            }
+
+            .table-w {
+                font-size: 14px;
+            }
+
+            .form-login {
+                .form-group {
+                    flex-direction: column;
+
+                    .form-left {
+                        width: 100%;
+                        text-align: center;
+                        padding-right: 0;
+                    }
+
+                    .form-right {
+                        width: 100%;
+                        flex-direction: column;
+
+                        input {
+                            margin-right: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .content {
+        .content-body {
+            .form {
+                .form-group {
+                    .form-mobile {
+                        flex-direction: column;
+                        align-items: unset;
+                    }
+
+                    .date {
+                        .date-left {
+                            margin-left: auto !important;
+                        }
+                    }
+                }
+            }
+
+            .question {
+                font-size: 14px; 
+                
+                table {
+                    tr td:first-child {
+                        font-size: 14px;
+                    }
+
+                    .question-w-40 {
+                        width: 40%;
+                    }
+                }
+            }
+
+            .question-list {
+                padding-left: 0;
+                .question-item {
+                    .question-child {
+                        padding-left: 0;
+                    }
+                }
+            }
+
+            .form-link {
+                display: flex;
+            }
+
+            .show {
+                .info {
+                    flex-direction: column;
+
+                    .info-left, .info-right {
+                        margin: 0;
+                        width: 100%;
+                    }
+
+                    .info-left {
+                        p:first-child {
+                            text-align: left;
+                        }
+
+                        .text-after::after {
+                            left: 0;
+                            top: 24px;
+                        }
+                    }
+                }
+            }  
+        }
+    }
+    .content .content-body .question-list .question-item .question-child .awnser-list .form-group {
+        margin-bottom: 10px;
+    }
+}
+table td {
+    position: unset;
+}
+
+input[type=radio] {
+    position: relative;
+    left: 0;
+    transform: translate(0, 0);
+}
+
+@media screen and (min-width: 568px) {
+    .hide {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 567px) {
+    .hide-on-mb {
+        display: none;
+    }
+
+    .content {
+        .content-body {
+            .question-mobile-list {
+                padding: 0 20px;
+                
+                .question-mobile {
+                    margin-bottom: 30px;
+                    padding-left: 0;
+
+                    .question-title {
+                        font-weight: bold;
+                        color: black;
+                    }
+
+                    .question-child {
+                        font-size: 18px;
+                    }
+
+                    li {
+                        display: flex;
+                        align-items: center;
+                        margin-bottom: 6px;
+
+                        input {
+                            height: 24px;
+                            width: 24px;
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

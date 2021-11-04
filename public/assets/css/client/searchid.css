@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#searchid {
+  padding: 50px 0;
+  color: black;
+  min-height: calc(100vh - 120px - 100px);
+}
+#searchid .login {
+  max-width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+#searchid .login .login-title {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+#searchid .login .login-desc {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+#searchid .login .form-login .form-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  color: #71716F;
+}
+#searchid .login .form-login .form-row .error {
+  color: red;
+}
+#searchid .login .form-login .form-row .note {
+  font-size: 20px;
+  color: #71716F;
+}
+#searchid .login .form-login .form-label {
+  font-size: 22px;
+  margin-right: 20px;
+  width: 40%;
+  text-align: right;
+}
+#searchid .login .form-login .form-input {
+  width: 60%;
+  text-align: left;
+}
+#searchid .login .form-login .form-input input {
+  padding: 14px;
+  width: 350px;
+  margin-right: 10px;
+}
+#searchid .login .form-login .form-input .error {
+  color: red;
+}
+#searchid .login .form-login .form-input select {
+  width: 350px;
+  padding: 14px;
+}
+#searchid .login .form-login .button {
+  padding: 10px 50px;
+  background-color: #4C8AF5;
+  border: none;
+  color: #FFF;
+  cursor: pointer;
+}
+
+.error {
+  color: red;
+}
+.error a {
+  color: blue;
+}
+
+@media screen and (max-width: 768px) {
+  #searchid .login .form-login .form-row {
+    flex-direction: column;
+  }
+  #searchid .login .form-login .form-label {
+    width: 100%;
+    text-align: center;
+  }
+  #searchid .login .form-login .form-input {
+    text-align: center;
+    width: 100%;
+  }
+  #searchid .login .form-login .form-input select, #searchid .login .form-login .form-input input {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 420px) {
+  #searchid .login .form-login .form-row {
+    flex-direction: column;
+  }
+  #searchid .login .form-login .form-label {
+    width: 100%;
+    text-align: center;
+  }
+  #searchid .login .form-login .form-input {
+    text-align: center;
+    width: 100%;
+  }
+  #searchid .login .form-login .form-input select, #searchid .login .form-login .form-input input {
+    width: 100%;
+  }
+}

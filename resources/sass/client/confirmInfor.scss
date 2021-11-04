@@ -1,0 +1,111 @@
+.header {
+    display: none;
+}
+.wrapConfirmInfor {
+    .wrapTitle {
+        .titleBig {
+            font-size: 32px;
+            text-align: center;
+            font-weight: bolder; 
+        }
+        .titleSmall {
+            font-size: 18px;
+            text-align: center;
+        }
+        
+    }
+    form {
+        padding: 50px 0;
+        .wrapForm {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            padding: 10px 0;
+            .title {
+                width: 49%;
+                justify-content: flex-end;
+                display: flex;
+                font-size: 18px;
+                align-items: center;
+                .wrapPhoneNumber {
+                    text-align: right;
+                    .tutorialTitle {
+                        font-size: 15px;
+                    }
+                }
+            }
+            .answer {
+                width: 49%;
+                justify-content:start;
+                display: flex;
+                font-size: 18px;
+                font-weight: bolder;
+                .wrapAnswer {
+                    .titleAnswer {
+                        font-size: 15px;
+                        font-weight: 100;   
+                    }
+                }
+                .wrapAnswerCity {
+                    width: 65%;
+                    display: flex;
+                    justify-content: space-between;
+                    .wrapDistrict {
+                        width: 50%;
+                        .titleAnswer {
+                            font-size: 15px;
+                            font-weight: 100;
+                        }
+                    }
+                }
+            }
+        }
+        .form-link {
+            width: 100%;
+            text-align: center;
+            padding: 50px 0;
+            button {
+                width: 20%;
+                padding: 14px;
+                margin: 0 10px;
+                border: none;
+                background-color: #CCC;
+                color: white;
+            }
+            .form-link-primary {
+                background-color: yellowgreen;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 567px) {
+    .wrapConfirmInfor form .form-link {
+        display: flex;
+
+        button {
+            width: 50%;
+        }
+    }
+
+    .wrapConfirmInfor {
+        .wrapForm {
+            flex-direction: column;
+
+            .title {
+                justify-content: start !important;
+                width: 100% !important;
+
+                .tutorialTitle {
+                    text-align: left;
+                }
+            }
+
+            .answer {
+                .wrapAnswerCity {
+                    width: 100% !important;
+                }
+            }
+        }
+    }
+}

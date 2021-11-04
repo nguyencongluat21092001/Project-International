@@ -1,0 +1,6 @@
+﻿.idea
+node_modules
+vendor
+.env
+resources/views/client/home.blade.php
+*.lock

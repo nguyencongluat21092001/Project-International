@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header {
+    display: none;
+}
+$background-color: #4C8AF5;
+$primary-color: #4C8AF5;
+$text-white: #FFF;
+$text-black: black;
+$background-black: black;
+$background-gray: #CCC;
+$background-white: #FFF;
+$border-gray: #EEE;
+
+$mobile-font-size: 16px;
+$tablet-font-size: 18px;
+$pc-font-size: 22px;
+$text-color: #71716F;
+
+#term {
+    padding: 50px 0;
+    padding-top: 0;
+    background-color: $background-white;
+    min-height: calc(100vh - (120px + 100px));
+    .term {
+        text-align: center;
+        .term-title {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        .term-desc {
+            margin-bottom: 20px;
+            font-size: 30px;
+        }
+
+        .term-content {
+            max-width: 60%;
+            height: 300px;
+            border: 2px solid $border-gray;
+            margin: 0 auto;
+            text-align: left;
+            overflow-y: scroll;
+            padding: 10px;
+            margin-bottom: 30px;
+            line-height: 2;
+        }
+
+        .term-link {
+            a {
+                display: inline-block;
+                margin: 20px;
+                padding: 10px 40px;
+                background-color: $background-gray;
+                color: $text-white;
+                text-decoration: none;
+                width: 200px;
+            }
+
+            .term-link-active {
+                background-color: $primary-color;
+            }
+        }
+    }
+}
+
+.form-link {
+    width: 100%;
+    text-align: center;
+    padding: 50px 0;
+    button {
+        width: 20%;
+        padding: 14px;
+        margin: 0 10px;
+        border: none;
+        background-color: #CCC;
+        color: white;
+    }
+    .form-link-primary {
+        background-color: yellowgreen;
+    }
+}
+
+.form-link-pt {
+    padding-top: 0;
+}
+
+@media screen and (min-width: 769px) {
+    #term .term .term-content {
+        max-width: 90%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #term {
+        .term {
+            .term-content {
+                max-width: 90%;
+            }
+            .term-link {
+                a {
+                    padding: 10px 30px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 567px) {
+    #term {
+        .term {
+            .term-content {
+                max-width: 90%;
+            }
+            .term-link {
+                a {
+                    padding: 10px 30px;
+                    width: 150px;
+                }
+            }
+        }
+    }
+
+    .form-link-pt {
+        display: flex;
+        button {
+            width: 50%;
+        }
+    }
+}

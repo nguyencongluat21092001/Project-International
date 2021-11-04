@@ -1,0 +1,430 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  background-color: #FFF;
+}
+.app a {
+  text-decoration: none;
+}
+.app .banner {
+  height: 400px;
+  position: relative;
+}
+.app .banner img {
+  width: 100%;
+  height: 100%;
+}
+.app .banner-info {
+  position: absolute;
+  width: 45%;
+  background-color: transparent;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: right;
+}
+.app .banner-info .title {
+  background-color: #4C8AF5;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #FFF;
+}
+.app .banner-info .title img {
+  width: 50px;
+}
+.app .banner-info .desc {
+  background-color: #4C8AF5;
+  display: inline-block;
+  margin-top: 10px;
+  color: #FFF;
+  padding: 6px 6px 6px 100px;
+  position: relative;
+}
+.app .banner-info .desc::before {
+  position: absolute;
+  content: "こんにちは1000ボール";
+  background-color: #FFF;
+  color: black;
+  left: -90px;
+  padding: 8px;
+  transform: rotate(-10deg);
+  top: 18px;
+  font-size: 16px;
+  border: 2px solid #EEE;
+}
+.header {
+  display: block;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	background: url(/images/banner11.jpg)no-repeat center top;
+	background-size: 100% 100%;
+	padding:16% 0 0 0;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: center;
+}
+.app .content {
+  padding: 50px 0;
+}
+.app .content .content-header {
+  margin-bottom: 40px;
+}
+.app .content .content-header .content-header-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.app .content .content-header .content-header-top img {
+  width: 80px;
+  margin-right: 20px;
+}
+.app .content .content-header .content-header-desc {
+  max-width: 80%;
+  margin: 0 auto;
+  font-size: 22px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+.app .content .content-header .content-header-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.app .content .content-header .content-header-icon .item {
+  width: 100px;
+  height: 100px;
+  margin: 0 10px;
+}
+.app .content .content-header .content-header-icon .item img {
+  width: 100%;
+  height: 100%;
+}
+.app .content .content-header .content-header-icon .item-small {
+  width: 50px;
+  height: 50px;
+  position: relative;
+}
+.app .content .content-header .content-header-icon .item-small span {
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  background: #CCC;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.app .content .content-header .content-header-icon .item-small span:first-child {
+  transform: rotate(45deg);
+}
+.app .content .content-header .content-header-icon .item-small span:last-child {
+  transform: rotate(-45deg);
+}
+.app .content .content-body .content-body-desc p {
+  font-weight: bold;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+.app .content .content-body .content-body-desc h1 {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.app .content .content-info .content-table {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  color: black;
+  padding-top: 0;
+}
+.app .content .content-info .content-table .content-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.app .content .content-info .content-table .content-title img {
+  width: 80px;
+}
+.app .content .content-info .content-table .content-row {
+  display: flex;
+  border-bottom: 3px solid #CCC;
+  font-size: 22px;
+}
+.app .content .content-info .content-table .content-row .content-col {
+  padding: 10px;
+}
+.app .content .content-info .content-table .content-row .content-col:first-child {
+  width: 20%;
+  border-right: 3px solid #CCC;
+  text-align: right;
+}
+.app .content .content-info .content-table .content-row .content-col:last-child {
+  flex: 1;
+}
+.app .content .content-info .content-table .content-row:last-child {
+  border-bottom: none;
+}
+.app .content .content-info .content-table .timeline .timeline-header {
+  display: flex;
+  justify-content: space-between;
+  color: black;
+  font-size: 22px;
+  font-weight: bold;
+}
+.app .content .content-info .content-table .timeline .timeline-body .timeline-row {
+  display: flex;
+  padding: 0 20px;
+  font-size: 22px;
+}
+.app .content .content-info .content-table .timeline .timeline-body .timeline-row .timeline-item {
+  width: 50%;
+  text-align: center;
+  background-color: #F4B183;
+  padding: 12px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+.app .content .content-info .content-table .timeline .timeline-body .timeline-row .timeline-item:first-child {
+  border-right: 1px solid #CC621A;
+  background-color: #ED7D31;
+  border: 2px solid #94552B;
+}
+.app .content .content-info .content-table .timeline .timeline-body .timeline-row .timeline-item:last-child {
+  border: 2px solid #CC621A;
+}
+.app .content .content-info .content-table .timeline .timeline-body .timeline-row .timeline-child {
+  padding: 4px;
+  background-color: #C5E0B4;
+}
+.app .content .content-info .content-table .timeline .timeline-body .timeline-row .timeline-child:first-child {
+  background-color: #C5E0B4;
+  border: 2px solid #708D5D;
+}
+.app .content .content-info .content-table .timeline .timeline-body .timeline-row .timeline-child:last-child {
+  border: 2px dotted green;
+  background-color: #E2F0D9;
+}
+.app .content .content-info .content-table .timeline .timeline-body .timeline-row .timeline-full-w {
+  width: 100%;
+  padding: 4px;
+  background-color: #C5E0B4 !important;
+  border: 2px solid #708D5D !important;
+}
+.app .content .content-info .content-table .timeline .timeline-body .timeline-desc {
+  padding: 0 20px;
+  font-size: 22px;
+}
+.app .content .content-info .content-table .schedule-row {
+  display: flex;
+  margin-bottom: 2px;
+  background-color: #FFE8CB;
+}
+.app .content .content-info .content-table .schedule-row .schedule-item {
+  width: 100px;
+  padding: 6px;
+  border-right: 2px solid #FFF;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.app .content .content-info .content-table .schedule-row .schedule-item p {
+  margin-bottom: 0;
+}
+.app .content .content-info .content-table .schedule-row .schedule-item .circle {
+  width: 16px;
+  height: 16px;
+  border: 2px solid black;
+  border-radius: 50%;
+}
+.app .content .content-info .content-table .schedule-row .item-full-w {
+  width: 500px;
+  position: relative;
+}
+.app .content .content-info .content-table .schedule-row .item-full-w .line-content {
+  border: 1px solid black;
+  padding: 2px 6px;
+  position: absolute;
+  z-index: 2;
+  background: #FFE8CB;
+  text-align: center;
+}
+.app .content .content-info .content-table .schedule-row .item-full-w .line {
+  position: absolute;
+  height: 6px;
+  background-color: black;
+  width: 90%;
+}
+.app .content .content-info .content-table .schedule-row .item-full-w .line::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  left: -4px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 0;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-right: 8px solid black;
+}
+.app .content .content-info .content-table .schedule-row .item-full-w .line::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  right: -4px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 0;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-left: 8px solid black;
+}
+.app .content .content-info .content-table .schedule-row .schedule-big {
+  flex: 1;
+  justify-content: left;
+  font-weight: bold;
+  align-items: center;
+}
+.app .content .content-info .content-table .schedule-row .schedule-big ul {
+  margin-bottom: 0;
+  list-style: inside;
+}
+.app .content .content-info .content-table .schedule-row .schedule-fl {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+.app .content .content-info .content-table .schedule-row .schedule-fl p {
+  margin-right: auto;
+}
+.app .content .content-info .content-table .schedule-row .schedule-fl ul {
+  margin-right: auto;
+}
+.app .content .content-info .content-table .schedule .schedule-note {
+  margin: 20px 0;
+  font-size: 22px;
+}
+.app .content .content-info .contact .contact-top {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.app .content .content-info .contact .contact-top .contact-left {
+  padding: 10px 20px;
+  border: 3px solid #4C8AF5;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 20px;
+}
+.app .content .content-info .contact .contact-top .contact-right h1 {
+  color: #4C8AF5;
+  font-weight: bold;
+}
+.app .content .content-info .contact .contact-mid {
+  text-align: center;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.content-link {
+  text-align: center;
+  margin: 40px 0;
+}
+.content-link .button {
+  display: inline-block;
+  padding: 14px 40px;
+  background: #4C8AF5;
+  color: #FFF;
+  border: none;
+}
+
+@media screen and (max-width: 900px) {
+  .app .banner .banner-info {
+    width: 100%;
+    padding-right: 30px;
+  }
+  .app .banner .banner-info .title, .app .banner .banner-info .desc {
+    font-size: 18px;
+  }
+  .app .content .content-info .content-table .content-row .content-col {
+    font-size: 18px;
+  }
+  .app .content .content-info .content-table .timeline .timeline-body .timeline-row .timeline-item {
+    font-size: 18px;
+  }
+  .app .content .content-info .content-table .schedule-row .schedule-item {
+    width: 10%;
+  }
+  .app .content .content-info .content-table .schedule-row .schedule-item p {
+    text-align: left;
+  }
+  .app .content .content-info .content-table .schedule-row .item-full-w {
+    width: 50%;
+  }
+  .app .content .content-info .contact .contact-top {
+    flex-direction: column;
+  }
+  .app .content .content-info .contact .contact-top .contact-left {
+    margin-right: 0;
+    text-align: center;
+  }
+  .app .content .content-info .contact .contact-top .contact-right h1 {
+    font-size: 24px;
+    padding: 20px 0;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 567px) {
+  .app .banner .banner-info {
+    padding-right: 0;
+  }
+  .app .banner .banner-info img {
+    display: none;
+  }
+  .app .banner .banner-info .title {
+    font-size: 16px;
+  }
+  .app .banner .banner-info .desc {
+    font-size: 16px;
+  }
+  .app .banner .banner-info .desc::before {
+    position: absolute;
+    content: "こんにちは1000ボール";
+    background-color: #FFF;
+    color: black;
+    left: 0px;
+    padding: 8px;
+    transform: rotate(0);
+    top: 50px;
+    font-size: 16px;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  .app .content .content-info .content-table .content-row .content-col {
+    font-size: 16px;
+  }
+  .app .content .content-info .content-table .timeline .timeline-body .timeline-row .timeline-item {
+    font-size: 16px;
+  }
+  .app .content .content-info .content-table .schedule-row .schedule-item {
+    width: 10%;
+  }
+  .app .content .content-info .content-table .schedule-row .schedule-item p {
+    text-align: left;
+  }
+  .app .content .content-info .content-table .schedule-row .item-full-w {
+    width: 50%;
+  }
+
+  p {
+    margin-bottom: 2px;
+  }
+}

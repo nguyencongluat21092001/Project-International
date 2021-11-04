@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#login{
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 800px;
+    background-image: url("/images/background-login.jpg");
+    opacity: 90%;
+    width: 100%;
+    box-sizing: border-box;
+}
+.header {
+  display: none;
+}
+
+#login {
+  padding: 50px 0;
+  color: black;
+  min-height: calc(100vh - 120px - 100px);
+}
+#login .login {
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+#login .login .login-title {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+#login .login .login-desc {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+#login .login .form-login .form-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 16px;
+  color: #71716F;
+}
+#login .login .form-login .form-row .error {
+  color: red;
+}
+#login .login .form-login .form-row .note {
+  font-size: 20px;
+  color: #71716F;
+}
+#login .login .form-login .form-label {
+  font-size: 22px;
+  margin-right: 20px;
+  width: 40%;
+  text-align: right;
+}
+#login .login .form-login .form-input {
+  width: 60%;
+  text-align: left;
+}
+#login .login .form-login .form-input input {
+  padding: 10px;
+  width: 300px;
+  margin-right: 10px;
+}
+#login .login .form-login .form-input .error {
+  color: red;
+}
+#login .login .form-login .button {
+  padding: 10px 30px;
+  background-color: #4C8AF5;
+  border: none;
+  color: #FFF;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+  #login label#code-error.error, #login label#password-error.error {
+    display: block;
+  }
+  #login .login {
+    width: 100%;
+  }
+  #login .login .form-login .form-row {
+    flex-direction: column;
+  }
+  #login .login .form-login .form-label {
+    margin-right: 0;
+    width: 100%;
+    text-align: center;
+  }
+  #login .login .form-login .form-input {
+    width: 100%;
+    text-align: center;
+  }
+  #login .login .form-login .form-input input {
+    margin-right: 0;
+  }
+}

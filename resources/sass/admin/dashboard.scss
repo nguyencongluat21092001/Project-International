@@ -1,0 +1,143 @@
+#dashboard {
+  min-height: calc(100vh - 120px - 100px);
+    .dashboard {
+        padding: 30px 0;
+        .dashboard-title {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .tableFixHead { 
+            overflow: auto; 
+            max-height: 500px; 
+        }
+
+        .tableFixHead thead th { 
+            position: sticky; 
+            top: 0; 
+            z-index: 10; 
+        }
+
+        th { 
+            background:#0d6efd;
+        }
+
+        /* Just common table stuff. Really. */
+        table  {
+            border-collapse: collapse; 
+            width: 100%; 
+        }
+
+        th, td { padding: 8px 16px; }
+
+        td.text-left {
+          text-align: left !important;
+        }
+
+        .dashboard-content {
+            margin-bottom: 60px;
+
+              table {
+                border: 1px solid #ccc;
+                border-collapse: collapse;
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                table-layout: fixed;
+
+                tbody {
+                    max-height: 500px;
+                    overflow-y: scroll;
+                }
+              }
+              
+              table caption {
+                font-size: 1.5em;
+                margin: .5em 0 .75em;
+              }
+              
+              table tr {
+                border: 1px solid #ddd;
+                padding: .35em;
+              }
+              
+              table th,
+              table td {
+                padding: .625em;
+                text-align: center;
+              }
+              
+              table th {
+                font-size: .85em;
+                letter-spacing: .1em;
+                text-transform: uppercase;
+              }
+              
+              @media screen and (max-width: 600px) {
+                table {
+                  border: 0;
+                }
+              
+                table caption {
+                  font-size: 1.3em;
+                }
+                
+                table thead {
+                  border: none;
+                  clip: rect(0 0 0 0);
+                  height: 1px;
+                  margin: -1px;
+                  overflow: hidden;
+                  padding: 0;
+                  position: absolute;
+                  width: 1px;
+                }
+                
+                table tr {
+                  border-bottom: 3px solid #ddd;
+                  display: block;
+                  margin-bottom: .625em;
+                }
+                
+                table td {
+                  border-bottom: 1px solid #ddd;
+                  display: block;
+                  font-size: .8em;
+                  text-align: right;
+                }
+                
+                table td::before {
+                  /*
+                  * aria-label has no advantage, it won't be read inside a table
+                  content: attr(aria-label);
+                  */
+                  content: attr(data-label);
+                  float: left;
+                  font-weight: bold;
+                  text-transform: uppercase;
+                }
+                
+                table td:last-child {
+                  border-bottom: 0;
+                }
+              }
+        }
+
+        .dashboard-footer {
+            text-align: center;
+            a {
+                display: inline-block;
+                padding: 10px 30px;
+                background-color: #0d6efd;    
+                color: white;      
+                text-decoration: none;      
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 567px) {
+  #dashboard .dashboard td.text-left {
+    text-align: right !important;
+  }
+}

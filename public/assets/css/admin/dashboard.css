@@ -1,0 +1,124 @@
+#dashboard {
+  min-height: calc(100vh - 120px - 100px);
+}
+#dashboard .dashboard {
+  padding: 30px 0;
+  /* Just common table stuff. Really. */
+}
+#dashboard .dashboard .dashboard-title {
+  text-align: center;
+  margin-bottom: 25px;
+}
+#dashboard .dashboard .tableFixHead {
+  overflow: auto;
+  max-height: 500px;
+}
+#dashboard .dashboard .tableFixHead thead th {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+#dashboard .dashboard th {
+  background: #0d6efd;
+}
+#dashboard .dashboard table {
+  border-collapse: collapse;
+  width: 100%;
+}
+#dashboard .dashboard th, #dashboard .dashboard td {
+  padding: 8px 16px;
+}
+#dashboard .dashboard td.text-left {
+  text-align: left !important;
+}
+#dashboard .dashboard .dashboard-content {
+  margin-bottom: 60px;
+}
+#dashboard .dashboard .dashboard-content table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+}
+#dashboard .dashboard .dashboard-content table tbody {
+  max-height: 500px;
+  overflow-y: scroll;
+}
+#dashboard .dashboard .dashboard-content table caption {
+  font-size: 1.5em;
+  margin: 0.5em 0 0.75em;
+}
+#dashboard .dashboard .dashboard-content table tr {
+  border: 1px solid #ddd;
+  padding: 0.35em;
+}
+#dashboard .dashboard .dashboard-content table th,
+#dashboard .dashboard .dashboard-content table td {
+  padding: 0.625em;
+  text-align: center;
+}
+#dashboard .dashboard .dashboard-content table th {
+  font-size: 0.85em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 600px) {
+  #dashboard .dashboard .dashboard-content table {
+    border: 0;
+  }
+  #dashboard .dashboard .dashboard-content table caption {
+    font-size: 1.3em;
+  }
+  #dashboard .dashboard .dashboard-content table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  #dashboard .dashboard .dashboard-content table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: 0.625em;
+  }
+  #dashboard .dashboard .dashboard-content table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: 0.8em;
+    text-align: right;
+  }
+  #dashboard .dashboard .dashboard-content table td::before {
+    /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  #dashboard .dashboard .dashboard-content table td:last-child {
+    border-bottom: 0;
+  }
+}
+#dashboard .dashboard .dashboard-footer {
+  text-align: center;
+}
+#dashboard .dashboard .dashboard-footer a {
+  display: inline-block;
+  padding: 10px 30px;
+  background-color: #0d6efd;
+  color: white;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 567px) {
+  #dashboard .dashboard td.text-left {
+    text-align: right !important;
+  }
+}

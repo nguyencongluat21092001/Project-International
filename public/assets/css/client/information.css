@@ -1,0 +1,129 @@
+.header {
+  display: none;
+}
+
+.wrappInformation .wrappFormInformation {
+  padding: 50px 0;
+}
+.wrappInformation .titleInforMation {
+  font-size: 32px;
+  text-align: center;
+  font-weight: bolder;
+}
+.wrappInformation .titleSmall {
+  font-size: 18px;
+  text-align: center;
+}
+.wrappInformation .itemPost {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.wrappInformation .itemPost .wrapSpanForm {
+  width: 30%;
+  margin-right: 50px;
+  text-align: right;
+}
+.wrappInformation .itemPost .wrapSpanForm .mailConfirm {
+  font-size: 15px;
+  text-align: right;
+}
+.wrappInformation .itemPost span {
+  font-size: 18px;
+  font-weight: bolder;
+}
+.wrappInformation .itemPost .wrapInputSpan {
+  width: 60%;
+  align-items: center;
+}
+.wrappInformation .itemPost .wrapInputSpan .error {
+  color: red;
+}
+.wrappInformation .itemPost .wrapInputSpan .wrapInputAndText {
+  width: 100%;
+}
+.wrappInformation .itemPost .wrapInputSpan .wrapInputAndText .wrapText {
+  display: flex;
+  width: 100%;
+}
+.wrappInformation .itemPost .wrapInputSpan .wrapInputAndText .wrapText .textTopInput {
+  width: 25%;
+}
+.wrappInformation .itemPost .wrapInputSpan .wrapInputAndText input {
+  width: 30%;
+}
+.wrappInformation .itemPost .wrapInputSpan .wrapInputAndText .wrapOption {
+  width: 100%;
+  display: flex;
+}
+.wrappInformation .itemPost .wrapInputSpan .wrapInputAndText .wrapOption .prefectures {
+  margin: 10px;
+  font-size: 18px;
+  padding: 10px;
+  margin-left: 0;
+  width: 30%;
+}
+.wrappInformation .itemPost .wrapInputSpan .wrapInputAndText .wrapOption .inforCity {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.wrappInformation .itemPost .wrapInputSpan .wrapInputAndText .wrapOption .inforCity input {
+  width: 60%;
+}
+.wrappInformation .itemPost .wrapInputSpan input {
+  margin: 10px;
+  font-size: 18px;
+  padding: 10px;
+  width: 55%;
+  margin-left: 0;
+}
+.wrappInformation .form-link {
+  width: 100%;
+  text-align: center;
+  padding: 50px 0;
+}
+.wrappInformation .form-link button {
+  width: 20%;
+  padding: 14px;
+  margin: 0 10px;
+  border: none;
+  background-color: #CCC;
+  color: white;
+}
+.wrappInformation .form-link .form-link-primary {
+  background-color: yellowgreen;
+}
+
+@media screen and (max-width: 768px) {
+  .wrappFormInformation {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .wrappFormInformation #informationForm .itemPost .wrapInputSpan {
+    width: 100%;
+  }
+  .wrappFormInformation #informationForm .itemPost .wrapInputSpan input {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 567px) {
+  .wrappFormInformation .itemPost {
+    flex-direction: column;
+    text-align: left;
+  }
+  .wrappFormInformation .itemPost .wrapSpanForm {
+    width: 100%;
+    margin-right: 0;
+    text-align: left;
+  }
+  .wrappFormInformation .itemPost .wrapSpanForm .mailConfirm {
+    text-align: left;
+  }
+  .wrappFormInformation .form-link {
+    display: flex;
+  }
+  .wrappFormInformation .form-link button {
+    width: 50%;
+  }
+}

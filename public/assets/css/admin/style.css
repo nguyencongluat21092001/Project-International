@@ -1,0 +1,372 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 20px;
+}
+
+ul {
+  list-style: none;
+}
+
+.content {
+  padding: 50px 0;
+}
+.content .content-header {
+  text-align: center;
+}
+.content .content-body .form {
+  max-width: 70%;
+  margin: 0 auto;
+  padding: 30px 0;
+  background-color: white;
+}
+.content .content-body .form .form-group {
+  display: flex;
+  align-items: center;
+  padding: 6px 0;
+}
+.content .content-body .form .form-group .form-item {
+  display: flex;
+  align-items: center;
+}
+.content .content-body .form .form-group .form-item span {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+.content .content-body .form .form-group .form-item input {
+  margin-right: 6px;
+}
+.content .content-body .form .form-group .form-item input[type=text] {
+  width: 60px;
+  padding: 4px;
+}
+.content .content-body .form .form-group .form-item input[type=radio] {
+  width: 20px;
+  height: 20px;
+  margin-top: 0;
+  cursor: pointer;
+}
+.content .content-body .form .form-group .form-item input[type=checkbox] {
+  width: 20px;
+  height: 20px;
+  margin-top: 0;
+  cursor: pointer;
+}
+.content .content-body .form .form-group .form-item-direction {
+  flex-direction: column;
+}
+.content .content-body .form .form-group .form-item-direction .form-el {
+  margin: 6px 0;
+}
+.content .content-body .form .form-group .form-item-direction div {
+  display: block;
+  width: 100%;
+}
+.content .content-body .form .form-group .form-item-direction .date {
+  display: flex;
+  align-items: center;
+}
+.content .content-body .form .form-group .form-item-direction .date .date-left {
+  margin-left: 100px;
+}
+.content .content-body .form .form-group .form-item-direction .date .date-left input {
+  margin: 0 10px;
+}
+.content .content-body .form .form-group label {
+  margin-bottom: 0;
+  width: 20%;
+}
+.content .content-body .question-list .question-item {
+  position: relative;
+}
+.content .content-body .question-list .question-item .question-child {
+  padding-left: 70px;
+}
+.content .content-body .question-list .question-item .question-child li {
+  margin-bottom: 20px;
+}
+.content .content-body .question-list .question-item .question-child .question-title {
+  font-size: 22px;
+  font-weight: bold;
+}
+.content .content-body .question-list .question-item .question-child .awnser-list {
+  padding: 10px 0;
+}
+.content .content-body .question-list .question-item .question-child .awnser-list input[type=radio] {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+.content .content-body .question-list .question-item .question-child .awnser-list .form-group {
+  display: flex;
+  font-size: 16px;
+}
+.content .content-body .question-list .question-item .question-child .awnser-list .form-group input[type=radio] {
+  margin-top: 0;
+}
+.content .content-body .question table {
+  text-align: center;
+}
+.content .content-body .question table tr td:first-child {
+  text-align: left;
+  font-size: 16px;
+}
+.content .content-body .question table .table-w {
+  width: 120px;
+}
+.content .content-body .show .info {
+  display: flex;
+}
+.content .content-body .show .info .info-left, .content .content-body .show .info .info-right {
+  width: 50%;
+  margin: 10px 20px;
+}
+.content .content-body .show .info .info-left {
+  text-align: right;
+  color: #CCC;
+}
+.content .content-body .show .info .info-left .text-after {
+  position: relative;
+}
+.content .content-body .show .info .info-left .text-after::after {
+  position: absolute;
+  content: "これは言葉です";
+  right: 0;
+  font-size: 12px;
+  color: #CCC;
+}
+.content .content-body .show .info .info-right {
+  font-weight: 600;
+}
+.content .content-body .show .info .info-right .detail .number {
+  position: relative;
+  padding-top: 10px;
+}
+.content .content-body .show .info .info-right .detail .number::before {
+  position: absolute;
+  content: "郵便番号";
+  top: -4px;
+  font-size: 12px;
+  color: #CCC;
+}
+.content .content-body .show .info .info-right .detail .name {
+  display: flex;
+  margin-bottom: 20px;
+}
+.content .content-body .show .info .info-right .detail .name .name-left, .content .content-body .show .info .info-right .detail .name .name-right {
+  margin-right: 30px;
+}
+.content .content-body .show .info .info-right .detail .name .name-left p, .content .content-body .show .info .info-right .detail .name .name-right p {
+  margin-bottom: 2px;
+}
+.content .content-body .show .info .info-right .detail .name .name-left p:first-child, .content .content-body .show .info .info-right .detail .name .name-right p:first-child {
+  font-size: 12px;
+  color: #CCC;
+}
+.content .content-body .show .info .info-right .detail .address .address-top {
+  margin-bottom: 20px;
+}
+.content .content-body .show .info .info-right .detail .address .address-top p:first-child {
+  font-size: 12px;
+  color: #CCC;
+}
+.content .content-body .show .rules {
+  text-align: center;
+  color: #CCC;
+  margin-bottom: 40px;
+}
+.content .content-body .mypage {
+  padding: 20px 0;
+}
+.content .content-body .mypage .mypage-title {
+  margin: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.content .content-body .mypage .video {
+  margin-bottom: 30px;
+}
+.content .content-body .mypage .video p {
+  text-align: center;
+}
+.content .content-body .mypage .video-body {
+  height: 200px;
+  background-color: yellow;
+  border: 1px solid #CCC;
+}
+.content .content-body .mypage .video .video-invalid {
+  background-color: #CCC;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content .content-body .mypage .mypage-note {
+  text-align: center;
+}
+.content .content-body .mypage .mypage-note p {
+  font-size: 16px;
+  max-width: 70%;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+.content .content-body .mypage .schedule .schedule-item {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+.content .content-body .mypage .schedule .schedule-item .schedule-btn {
+  display: inline-block;
+  padding: 6px 50px;
+  background-color: green;
+  margin-left: 20px;
+  color: white;
+}
+.content .content-body .mypage .schedule .schedule-item .schedule-invalid {
+  background-color: #CCC;
+  cursor: not-allowed;
+}
+.content .content-body .form-login {
+  padding: 50px 0;
+}
+.content .content-body .form-login p {
+  margin-bottom: 0;
+}
+.content .content-body .form-login .form-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content .content-body .form-login .form-group .form-left {
+  width: 50%;
+  text-align: right;
+  padding-right: 40px;
+  font-size: 28px;
+}
+.content .content-body .form-login .form-group .form-right {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+.content .content-body .form-login .form-group .form-right input {
+  padding: 4px 10px;
+  margin-right: 6px;
+}
+.content .content-body .form-login .form-error {
+  color: red;
+  font-size: 18px;
+  text-align: center;
+  display: none;
+}
+
+table td {
+  position: relative;
+  min-height: 100px;
+}
+
+input[type=radio] {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 0;
+}
+
+.form-link {
+  text-align: center;
+}
+.form-link button {
+  width: 200px;
+  padding: 14px;
+  margin: 0 10px;
+  border: none;
+  background-color: #CCC;
+  color: white;
+}
+.form-link .form-link-primary {
+  background-color: yellowgreen;
+}
+
+@media screen and (max-width: 1200px) {
+  .content .content-body .form {
+    max-width: 100%;
+  }
+
+  .container-full-w {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .content .content-body .form .form-group {
+    display: block;
+  }
+  .content .content-body .form .form-group label {
+    width: 100%;
+  }
+  .content .content-body .question-w-40 {
+    width: 40%;
+  }
+  .content .content-body .table-w {
+    font-size: 14px;
+  }
+  .content .content-body .form-login .form-group {
+    flex-direction: column;
+  }
+  .content .content-body .form-login .form-group .form-left {
+    width: 100%;
+    text-align: center;
+    padding-right: 0;
+  }
+  .content .content-body .form-login .form-group .form-right {
+    width: 100%;
+    flex-direction: column;
+  }
+  .content .content-body .form-login .form-group .form-right input {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 500px) {
+  .content .content-body .form .form-group .form-mobile {
+    flex-direction: column;
+    align-items: unset;
+  }
+  .content .content-body .form .form-group .date .date-left {
+    margin-left: auto !important;
+  }
+  .content .content-body .question {
+    font-size: 14px;
+  }
+  .content .content-body .question table tr td:first-child {
+    font-size: 14px;
+  }
+  .content .content-body .question table .question-w-40 {
+    width: 40%;
+  }
+  .content .content-body .question-list .question-item .question-child {
+    padding-left: 0;
+  }
+  .content .content-body .form-link {
+    display: flex;
+  }
+  .content .content-body .show .info {
+    flex-direction: column;
+  }
+  .content .content-body .show .info .info-left, .content .content-body .show .info .info-right {
+    margin: 0;
+    width: 100%;
+  }
+  .content .content-body .show .info .info-left p:first-child {
+    text-align: left;
+  }
+  .content .content-body .show .info .info-left .text-after::after {
+    left: 0;
+    top: 24px;
+  }
+}

@@ -1,0 +1,97 @@
+.header {
+  display: none;
+}
+
+.wrapConfirmInfor .wrapTitle .titleBig {
+  font-size: 32px;
+  text-align: center;
+  font-weight: bolder;
+}
+.wrapConfirmInfor .wrapTitle .titleSmall {
+  font-size: 18px;
+  text-align: center;
+}
+.wrapConfirmInfor form {
+  padding: 50px 0;
+}
+.wrapConfirmInfor form .wrapForm {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+.wrapConfirmInfor form .wrapForm .title {
+  width: 49%;
+  justify-content: flex-end;
+  display: flex;
+  font-size: 18px;
+  align-items: center;
+}
+.wrapConfirmInfor form .wrapForm .title .wrapPhoneNumber {
+  text-align: right;
+}
+.wrapConfirmInfor form .wrapForm .title .wrapPhoneNumber .tutorialTitle {
+  font-size: 15px;
+}
+.wrapConfirmInfor form .wrapForm .answer {
+  width: 49%;
+  justify-content: start;
+  display: flex;
+  font-size: 18px;
+  font-weight: bolder;
+}
+.wrapConfirmInfor form .wrapForm .answer .wrapAnswer .titleAnswer {
+  font-size: 15px;
+  font-weight: 100;
+}
+.wrapConfirmInfor form .wrapForm .answer .wrapAnswerCity {
+  width: 65%;
+  display: flex;
+  justify-content: space-between;
+}
+.wrapConfirmInfor form .wrapForm .answer .wrapAnswerCity .wrapDistrict {
+  width: 50%;
+}
+.wrapConfirmInfor form .wrapForm .answer .wrapAnswerCity .wrapDistrict .titleAnswer {
+  font-size: 15px;
+  font-weight: 100;
+}
+.wrapConfirmInfor form .form-link {
+  width: 100%;
+  text-align: center;
+  padding: 50px 0;
+}
+.wrapConfirmInfor form .form-link button {
+  width: 20%;
+  padding: 14px;
+  margin: 0 10px;
+  border: none;
+  background-color: #CCC;
+  color: white;
+}
+.wrapConfirmInfor form .form-link .form-link-primary {
+  background-color: yellowgreen;
+}
+
+@media screen and (max-width: 567px) {
+  .wrapConfirmInfor form .form-link {
+    display: flex;
+  }
+  .wrapConfirmInfor form .form-link button {
+    width: 50%;
+  }
+
+  .wrapConfirmInfor .wrapForm {
+    flex-direction: column;
+  }
+  .wrapConfirmInfor .wrapForm .title {
+    justify-content: start !important;
+    width: 100% !important;
+  }
+  .wrapConfirmInfor .wrapForm .title .tutorialTitle {
+    text-align: left;
+  }
+  .wrapConfirmInfor .wrapForm .answer .wrapAnswerCity {
+    width: 100% !important;
+  }
+}

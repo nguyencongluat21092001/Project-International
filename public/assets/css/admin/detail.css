@@ -1,0 +1,61 @@
+#detail {
+  min-height: calc(100vh - (120px + 100px));
+}
+#detail .detail {
+  padding: 30px 0;
+}
+#detail .detail .detail-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+#detail .detail .detail-content {
+  margin-bottom: 20px;
+}
+#detail .detail .detail-content .detail-row {
+  display: flex;
+  max-width: 60%;
+  margin: 0 auto;
+  margin-bottom: 2px;
+}
+#detail .detail .detail-content .detail-row .detail-left {
+  width: 40%;
+  padding: 10px;
+  background: #4370C3;
+  color: white;
+}
+#detail .detail .detail-content .detail-row .detail-right {
+  width: 60%;
+  background: #CED4EA;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+#detail .detail .detail-content .detail-row .detail-right form {
+  display: flex;
+  align-items: center;
+}
+#detail .detail .detail-content .detail-row .detail-right form input {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+#detail .detail .detail-link {
+  text-align: center;
+}
+#detail .detail .detail-link a {
+  display: inline-block;
+  padding: 6px 40px;
+  background: #4370C3;
+  color: white;
+  text-decoration: none;
+}
+#detail .modal .modal-body input {
+  width: 20px;
+  height: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  #detail .detail .detail-content .detail-row {
+    max-width: 100%;
+  }
+}
